@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>最新采集图片大全——花瓣网</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="images/huaban.jpg" />
+</head>
+<body onload="autoTabStart()">
+    <div id="page">
+        <div id="header">
+            <div id="wrappers">
+                <div id="left">
+                    <input id="query" type="text" size="27" name="q" autocomplete="off" placeholder="搜索你喜欢的" value="" />
+                    <div class="search-hint"></div>
+                    <a href="javascript:;" onclick="return false;" class="go"></a>
+                </div>
+                <div id="huaban">
+                    <a href="javascript:;">
+                        <img id="huaban1" src="images/huaban.jpg">
+                    </a>
+                    <div id="huaban2">
+                        <a href="javascript:;">花瓣</a>
+                    </div>
+                </div>
+                <div>
+                    <a id="right1" href="javascript:;" target="_blank">注 册</a>
+                    <a id="right2" href="javascript:;" target="_blank">登 陆</a>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>    
+        <div id="titou">
+            <div class="wrapper">
+                <div id="word">
+                    <div id="titouwenzi1">国内最优质图片灵感库</div>
+                    <div id="titouwenzi2">已有数百万出众网友，用花瓣保存喜欢的图片</div>
+                </div>
+                <div id="denglu">
+                    <a href="javascript:;" class="tubiao-last" id="renren"></a>
+                    <a href="javascript:;" class="tubiao" id="douban"></a>
+                    <a href="javascript:;" class="tubiao" id="qq"></a>
+                    <a href="javascript:;" class="tubiao" id="weibo"></a>
+                    <div id="zjdl">———&nbsp&nbsp用以上社交账号直接登陆&nbsp&nbsp———</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div id="fpic">
+            <div id="content" onmouseout="hiddenAndStart()" onmouseover="showAndStop()">
+                <div id="arrow">
+                    <a id="l_arrow" href="javascript:;" onclick="move(false)">
+                    </a>
+                    <a id="r_arrow" href="javascript:;" onclick="move(true)">
+                    </a>
+                </div>
+                <div id="contbox">
+                    <div class="show">
+                        <a href="javascript:;">
+                            <img src="images\pic1_1.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic1_2.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic1_3.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic1_4.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic1_5.jpg"/>
+                        </a>
+                        <span class="fbottom">
+                            <p>我们“有所不知”的另一个世界</p>
+                        </span>
+                    </div>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images\pic2_1.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic2_2.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic2_3.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic2_4.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic2_5.jpg"/>
+                        </a>
+                        <span class="fbottom">
+                            <p>润物细无声，时间飞逝</p>
+                        </span>
+                    </div>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images\pic3_1.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic3_2.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic3_3.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic3_4.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic3_5.jpg"/>
+                        </a>
+                        <span class="fbottom">
+                            <p>张开双手，拥抱世界</p>
+                        </span>
+                    </div>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images\pic4_1.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic4_2.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic4_3.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic4_4.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic4_5.jpg"/>
+                        </a>
+                        <span class="fbottom">
+                            <p>可口的美食最让我们流连忘返</p>
+                        </span>
+                    </div>
+                    <div>
+                        <a href="javascript:;">
+                            <img src="images\pic5_1.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic5_2.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic5_3.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic5_4.jpg"/>
+                        </a>
+                        <a href="javascript:;">
+                            <img src="images\pic5_5.jpg"/>
+                        </a>
+                        <span class="fbottom">
+                             <p>每一颗顽石都有自己的故事</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <ul id="btphoto" onmouseover="autoTapStop()">
+                <li class="selected" onmouseover="display(0)"></li>
+                <li onmouseover="display(1)"></li>
+                <li onmouseover="display(2)"></li>
+                <li onmouseover="display(3)"></li>
+                <li onmouseover="display(4)"></li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div id="guide">
+                <div class="unit">
+                    <a class="x" href="javascript:;" >家居/装饰</a>
+                    <a class="x" href="javascript:;" >旅游</a>
+                    <a class="x" href="javascript:;" >美食</a>
+                    <a class="x" href="javascript:;" >手工/布艺</a>
+                    <a class="x" href="javascript:;" >婚纱/婚礼</a>
+                    <a class="x" href="javascript:;" >服饰/街拍/秀场</a>
+                    <a class="x" href="javascript:;" >搭配</a>
+               </div>
+                <div class="unit">
+                    <a class="x" href="javascript:;" >造型/美妆/纹身</a>
+                    <a class="x" href="javascript:;" >潮品/单品</a>
+                    <a class="x" href="javascript:;" >健身/减肥</a>
+                    <a class="x" href="javascript:;" >汽车/摩托</a>
+                    <a class="x" href="javascript:;" >男士风尚</a>
+                    <a class="x" href="javascript:;" >工业设计</a>
+                    <a class="x" href="javascript:;" >插画</a>
+                </div>
+                <div class="unit">
+                    <a class="x" href="javascript:;" >平面设计</a>
+                    <a class="x" href="javascript:;" >UI 交互设计</a>
+                    <a class="x" href="javascript:;" >动漫</a>
+                    <a class="x" href="javascript:;" >游戏</a>
+                    <a class="x" href="javascript:;" >极客</a>
+                    <a class="x" href="javascript:;" >建筑设计</a>
+                    <a class="x" href="javascript:;" >动物</a>
+                </div>
+                <div class="unit">
+                    <a class="x" href="javascript:;" >儿童</a>
+                    <a class="x" href="javascript:;" >摄影</a>
+                    <a class="x" href="javascript:;" >美文美图</a>
+                    <a class="x" href="javascript:;" >人文艺术</a>
+                    <a class="x" href="javascript:;" >音乐/电影/图书</a>
+                    <a class="x" href="javascript:;" >名人/明星</a>
+                    <a class="x" href="javascript:;" >生活百科</a>
+                </div>
+                <div class="unit-last">
+                    <a class="x" href="javascript:;" >教育</a>
+                    <a class="x" href="javascript:;" >数据图</a>
+                    <a class="x" href="javascript:;" >体育运动</a>
+                    <a class="x" href="javascript:;" >美女</a>
+                    <a class="x" href="javascript:;" >搞笑图</a>
+                    <a class="x" href="javascript:;" >其它</a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div id="image-box">
+                <a class="category-image" href="javascript:;" target="_blank" title="青春如歌飘落">
+                    <img class="category-image-size" src="images/2.jpg" />
+                </a>
+                <a class="category-image" href="javascript:;" target="_blank"
+                   title="每一颗顽石都有属于它自己的故事">
+                    <img class="category-image-size" src="images/3.jpg" />
+                </a>
+                <a class="category-image" href="javascript:;" target="_blank"
+                   title="微风吹拂过的那个街角">
+                    <img class="category-image-size" src="images/4.jpg" />
+                </a>
+                <a class="category-image" href="javascript:;" target="_blank" title="秋风中回忆往昔">
+                    <img class="category-image-size" src="images/5.jpg" />
+                </a>
+                <a class="category-image" href="javascript:;" target="_blank" title="绘心绘意">
+                    <img class="category-image-size" src="images/1.jpg" />
+                </a>
+            </div>
+            <div id="image-fall">
+                <div class="category-imagebox">
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/11.jpg" />
+                        </a>
+                        <p class="description">美人如伊，亭亭玉立</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang1.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">红尘客栈</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">秋水伊人</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/12.jpg" />
+                        </a>
+                        <p class="description">面团小兔</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang2.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">好多鱼</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">美食美味</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/13.jpg" />
+                        </a>
+                        <p class="description">......</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="/">
+                                <img class="touxiang" src="images/touxiang11.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">聆樊风</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">这就是生活</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-imagebox">
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/21.jpg" />
+                        </a>
+                        <p class="description">梦断红楼，古相思曲，笑红尘~</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang3.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">天上掉下个林妹妹</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">古典文学</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/22.jpg" />
+                        </a>
+                        <p class="description">梦园</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang4.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">cc猫</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">这就是生活</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/23.jpg" />
+                        </a>
+                        <p class="description">沙漠美人</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang12.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">awen</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">秋水伊人</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-imagebox">
+                        <div class="category-imagediv">
+                            <a href="javascript:;" target="_blank">
+                                <img class="category-image-fall" src="images/31.jpg" />
+                            </a>
+                            <p class="description">春暖花开，这是我的世界</p>
+                            <div class="attribution">
+                                <a class="attributionimage" href="javascript:;">
+                                    <img class="touxiang" src="images/touxiang5.jpg" />
+                                </a>
+                                <div class="text">
+                                    <div class="inner">
+                                        <div class="line">
+                                            <a class="author" href="javascript:;">美人如玉</a>
+                                            <span>&nbsp采集到</span>
+                                        </div>
+                                        <div class="line">
+                                            <a class="cangku" href="javascript:;">秋水伊人</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-imagediv">
+                            <a href="javascript:;" target="_blank">
+                                <img class="category-image-fall" src="images/32.jpg" />
+                            </a>
+                            <p class="description">好看的都下不去口了~~</p>
+                            <div class="attribution">
+                                <a class="attributionimage" href="javascript:;">
+                                    <img class="touxiang" src="images/touxiang6.jpg" />
+                                </a>
+                                <div class="text">
+                                    <div class="inner">
+                                        <div class="line">
+                                            <a class="author" href="javascript:;">till</a>
+                                            <span>&nbsp采集到</span>
+                                        </div>
+                                        <div class="line">
+                                            <a class="cangku" href="javascript:;">美食美味</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category-imagediv">
+                            <a href="javascript:;" target="_blank">
+                                <img class="category-image-fall" src="images/33.jpg" />
+                            </a>
+                            <p class="description">寿司卷</p>
+                            <div class="attribution">
+                                <a class="attributionimage" href="javascript:;">
+                                    <img class="touxiang" src="images/touxiang13.jpg" />
+                                </a>
+                                <div class="text">
+                                    <div class="inner">
+                                        <div class="line">
+                                            <a class="author" href="javascript:;">咱们老百姓</a>
+                                            <span>&nbsp采集到</span>
+                                        </div>
+                                        <div class="line">
+                                            <a class="cangku" href="javascript:;">美食美味</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="category-imagebox">
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/41.jpg" />
+                        </a>
+                        <p class="description">哇~</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang7.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">4345656</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">这就是生活</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/42.jpg" />
+                        </a>
+                        <p class="description">~~</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="/">
+                                <img class="touxiang" src="images/touxiang14.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">我爱吃西红柿</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">秋水伊人</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-imagebox">
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/51.jpg" />
+                        </a>
+                        <p class="description">水晶的哎~</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang8.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">43ldld</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">美食美味</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/52.jpg" />
+                        </a>
+                        <p class="description">红纱</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang9.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">ap4869</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">秋水伊人</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/53.jpg" />
+                        </a>
+                        <p class="description">这才叫生活！</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang10.jpg" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">啦啦啦</a>
+                                        <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">这就是生活</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-imagediv">
+                        <a href="javascript:;" target="_blank">
+                            <img class="category-image-fall" src="images/54.jpg" />
+                        </a>
+                        <p class="description">女神霉霉好会穿~</p>
+                        <div class="attribution">
+                            <a class="attributionimage" href="javascript:;">
+                                <img class="touxiang" src="images/touxiang15.gif" />
+                            </a>
+                            <div class="text">
+                                <div class="inner">
+                                    <div class="line">
+                                        <a class="author" href="javascript:;">夏了夏天</a>
+                                       <span>&nbsp采集到</span>
+                                    </div>
+                                    <div class="line">
+                                        <a class="cangku" href="javascript:;">着装</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="clear"></div>
+        </div>
+        <div id="loading">
+                <img id="loadingsize" src="images/loading.gif" /> 
+                <p style="text-indent: 1em;">loading...</p>
+        </div>
+    </div>
+    <script src="js.js">
+    </script>
+</body>
+</html>
